@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Button Tappers Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splash">
+    <img
+      src="bentechgames.jpeg"
+      alt="BENTECH Games logo"
+      id="splash-logo"
+    />
+  </div>
+
+  <div id="app">
+    <div class="score-bar">
+      <!-- Removed "Score:" label so only the numeric score shows -->
+      <span id="score-value">0</span>
+    </div>
+
+    <div class="game-area">
+      <div class="button-wrapper">
+        <button id="tap-button">
+          <span class="tap-text">TAP ME!</span>
+        </button>
+        <!-- removed external +1 under the button -->
+      </div>
+    </div>
+
+    <div class="info-toggle-bar">
+      <button id="info-toggle">
+        What is Button Tappers?
+      </button>
+    </div>
+
+    <div id="effects-layer"></div>
+  </div>
+
+  <div id="info-panel" aria-hidden="true">
+    <div class="info-panel-content">
+      <p>
+        Button Tappers is an upcoming Mobile-Exclusive Google Play game by BENTECH Games.
+        You tap a button for score and you can convert your score for coins in the full version,
+        these coins let you buy upgrades in the full version to boost your score.
+        Also there's like uh, Cloud Saving. Which I guess is cool. Those are all the developed
+        features in the full version of the game, we plan to add more before we launch the full
+        version to Google Play in 2026.
+      </p>
+      <a
+        href="https://x.com/bentechgames"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="follow-button"
+      >
+        Follow @bentechgames for updates
+      </a>
+      <button id="info-close" class="info-close-button">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
